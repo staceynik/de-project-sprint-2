@@ -1,8 +1,8 @@
 drop table if exists shipping_status cascade;
 CREATE TABLE shipping_status (
     shipping_id BIGINT PRIMARY KEY,
-    status TEXT,
-    state TEXT,
+    status VARCHAR,
+    state VARCHAR,
     shipping_start_fact_datetime TIMESTAMP WITHOUT TIME ZONE,
     shipping_end_fact_datetime TIMESTAMP WITHOUT TIME ZONE
 );
