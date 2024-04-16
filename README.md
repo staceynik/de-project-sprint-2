@@ -1,31 +1,5 @@
-# Проект 2-го спринта
+# Data Warehouse and Data Model Revision Project for an Online Store 
 
-### Описание
-Репозиторий предназначен для сдачи проекта 2-го спринта. 
+## Overview
 
-### Как работать с репозиторием
-1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-2` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
-2. Скопируйте репозиторий на свой локальный компьютер, в качестве пароля укажите ваш `Access Token` (получить нужно на странице [Personal Access Tokens](https://github.com/settings/tokens)):
-	* `git clone https://github.com/{{ username }}/de-project-sprint-2.git`
-3. Перейдите в директорию с проектом: 
-	* `cd de-project-sprint-2`
-4. Выполните проект и сохраните получившийся код в локальном репозитории:
-	* `git add .`
-	* `git commit -m 'my best commit'`
-5. Обновите репозиторий в вашем GutHub-аккаунте:
-	* `git push origin main`
-
-### Структура репозитория
-Папка `migrations` хранит файлы миграции. 
-Файлы миграции должны быть с расширением `.sql` и содержать SQL-скрипт обновления базы данных.
-
-### Как запустить контейнер
-Запустите локально команду:
-
-```
-docker run -d --rm -p 3000:3000 -p 15432:5432 --name=de-project-sprint-2-server cr.yandex/crp1r8pht0n0gl25aug1/project-sprint-2:latest
-```
-
-После того как запустится контейнер, у вас будут доступны:
-1. PostgreSQL
-2. VSCode
+This project focuses on restructuring the data model for an e-commerce platform to optimize analytical processing and storage efficiency. We have decomposed the extensive shipping table into logical, manageable tables and built a data mart that supports targeted queries about vendor rates, shipping costs by country, and weekly delivery metrics. This restructuring enables analysts to efficiently conduct business profitability and efficiency analyses.
