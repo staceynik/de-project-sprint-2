@@ -12,7 +12,7 @@ FROM shipping
 WHERE shipping_country IS NOT NULL AND shipping_country_base_rate IS NOT NULL;
 
 
--- Проверка содержимого таблицы
+-- Checking Table Contents 
 
 select * from shipping_country_rates limit 10;
 

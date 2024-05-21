@@ -33,7 +33,7 @@ LEFT JOIN
 ON CONFLICT (shipping_id) 
 DO NOTHING;
 
--- Проверка содержимого таблицы
+-- Checking Table Contents
 
 SELECT COUNT(*) FROM shipping_info;
 

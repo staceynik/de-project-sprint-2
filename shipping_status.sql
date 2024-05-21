@@ -31,7 +31,7 @@ FROM
 JOIN 
     ship_max sm ON s.shipping_id = sm.shipping_id AND s.state_datetime = sm.max_state_datetime;
 
--- Проверка содержимого таблица
+-- Checking Table Contents
 
 SELECT COUNT(*) from shipping_status;
 

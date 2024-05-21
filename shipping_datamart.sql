@@ -17,7 +17,7 @@ INNER JOIN shipping_transfer st ON si.shipping_transfer_id = st.id
 INNER JOIN shipping_country_rates scr ON si.shipping_country_rate_id = scr.id
 INNER JOIN shipping_agreement sa ON si.shipping_agreement_id = sa.agreement_id;
 
--- Проверка содержимого таблицы
+-- Checking Table Contents
 
 SELECT * FROM shipping_datamart LIMIT 10;
 

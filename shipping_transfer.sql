@@ -14,7 +14,7 @@ SELECT DISTINCT
 FROM 
     shipping;
 
--- Проверка содержимого таблицы
+-- Checking Table Contents
 
 SELECT COUNT(*) FROM shipping_transfer;
 
